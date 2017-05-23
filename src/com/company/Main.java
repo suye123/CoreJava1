@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Created by HJ on 2017/5/22.
  * this program demonstrates a <code>while<code/>loop.
  * hello,I'm back.
- * But git is so difficult.
+ * But git is so difficult.try again!
  **/
 class Retirement {
     public static void main(String[]args)
