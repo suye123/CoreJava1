@@ -1,6 +1,7 @@
 /**
  * Created by HJ on 2017/5/25.
  */
+package chapter04;
 import java.util.*;
 import java.util.Scanner;
 
@@ -32,7 +33,7 @@ public class OneDimensionalArray {                              //声明类
             }
             j++;
         }
-        for(int i=1;i<carbonEmissions.length;i++)
+        for(int i=0;i<carbonEmissions.length;i++)
             for (int k=0;k<carbonEmissions.length; k++)
                 if (carbonEmissions[i]<carbonEmissions[k]){
                 double temp=carbonEmissions[i];
@@ -40,9 +41,9 @@ public class OneDimensionalArray {                              //声明类
                 carbonEmissions[k]=temp;
                 }
 
-        System.out.println("从小到大输出");
+        System.out.print("从小到大输出");
         for(int i=0;i<carbonEmissions.length;i++)
-            System.out.println(carbonEmissions[i]+",");
+            System.out.print(carbonEmissions[i]+",");
         System.out.println("总排放量："+totalEmissions);
         System.out.println("是否超过"+emissionStandard+"的排放标准？"+(totalEmissions>emissionStandard));
         System.out.println("平均排放量："+totalEmissions/carbonEmissions.length);
